@@ -14,6 +14,9 @@ const connect = function() {
     // setInterval(function() {
     //   conn.write("Move: up");
     // }, 500);
+    conn.on('data', data => {
+      console.log(data);
+    });
   });
     
   return conn;
