@@ -10,6 +10,7 @@ const connect = function() {
 
   conn.on("connect", function() {
     console.log("Connection has been made");
+    conn.write("Name: ARY");
   });
 
   return conn;
